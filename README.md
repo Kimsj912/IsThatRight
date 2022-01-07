@@ -1,7 +1,46 @@
 # 간단 퀴즈 공유 페이지 [이거맞지? : IsThatRight]
-- 안녕하세요. 신서유기를 보고 각종 문제를 만들고 공유하여 풀어보는 페이지 이거맞지의 레포짓토리입니다.
-- 자바스크립트 스터디 "텔레토비조작단"에서 개별적으로 가볍게 진행하는 프로젝트로 web언어 3인방(html, css, vanilla js)과 Django를 이용해 개발하고 있습니다.
-- 아래 사진들은 개발 기획 발표자료들로 readme로써 사용하기 적합하다 생각해 함께 올려뒀습니다 :)
+#### - 안녕하세요. 신서유기를 보고 각종 문제를 만들고 공유하여 풀어보는 페이지 이거맞지의 레포짓토리입니다.
+#### - 자바스크립트 스터디 "텔레토비조작단"에서 개별적으로 가볍게 진행하는 프로젝트로 web언어 3인방(html, css, vanilla js)과 Django를 이용해 개발하고 있습니다.
+#### - 아래 사진들은 개발 기획 발표자료들로 readme로써 사용하기 적합하다 생각해 함께 올려뒀습니다 :)
+#### - 설치 안내
+> ###### 1. git clone
+> 
+> 원하는 폴더에 레포지토리를 클론해주세요.
+> 
+> ```bash
+> $ git clone https://github.com/Han-Joon-Hyeok/Booklog.git
+> ```
+>     
+>
+>  ##### 2. 가상환경 생성
+>
+>  Django를 실행하기 위한 가상환경을 생성해주세요. (가상환경의 이름은 venv입니다)
+>
+>  ```bash
+>  $ python -m venv venv
+>  ```
+>
+>
+>  ##### 3. 가상환경을 활성화 시켜줍니다.
+>
+>  ```bash
+>  $ source venv/scripts/activate # for windows
+>  $ source venv/bin/activate # for mac or linux
+>  ```
+>
+>  ##### 4. 프로젝트에 필요한 패키지를 다운 받습니다.
+>
+>  ```bash
+>  $ pip install -r requirements.txt # for Windows
+>  $ pip3 install -r requirements.txt # for Mac/Linux
+>  ```
+>
+>  > 프로젝트에 필요한 패키지 파일을 새롭게 추가하고자 한다면 아래의 명령어를 입력
+>  >
+>  >```bash
+>  >$ pip freeze > requirements.txt
+>  >```
+
 
 ## 시작
 ![슬라이드1](https://user-images.githubusercontent.com/48820696/148493679-b0178cf1-b147-4540-b60e-2892021f192f.PNG)
