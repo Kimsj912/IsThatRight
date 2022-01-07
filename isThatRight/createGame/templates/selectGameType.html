@@ -1,0 +1,16 @@
+{% extends "makeGame.html" %}
+    {% block makeGame %}
+    <p>
+        <a href="{% url 'makeTTGame' %}">텍스트 문제에 텍스트로 답하기</a>
+    </p>
+    <p>
+        <a href="{% url 'makeITGame' %}">이미지 문제에 텍스트로 답하기</a>
+    </p>
+    <p>
+        <a href="{% url 'makeTSGame' %}">텍스트 문제에 선지로 답하기</a>
+    </p>
+    <p>
+        <a href="{% url 'makeISGame' %}">이미지 문제에 선지로 답하기</a>
+    </p>
+
+    {% endblock %}
