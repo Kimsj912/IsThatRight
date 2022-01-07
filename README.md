@@ -1,26 +1,26 @@
-# IsThatRight
+# 간단 퀴즈 공유 페이지 [이거맞지? : IsThatRight]
 
-# 시작
+## 시작
 ![슬라이드1](https://user-images.githubusercontent.com/48820696/148493679-b0178cf1-b147-4540-b60e-2892021f192f.PNG)
 
-# 프로젝트 소개
+## 프로젝트 소개
 ![슬라이드2](https://user-images.githubusercontent.com/48820696/148493680-d4888c08-6622-4bfc-a9a1-6b3569c38ce1.PNG)
 ![슬라이드3](https://user-images.githubusercontent.com/48820696/148493682-9b4270de-4f34-4871-931d-84f0bc4a620d.PNG)
 ![슬라이드4](https://user-images.githubusercontent.com/48820696/148493685-76fe8975-3872-499a-9f7e-706dacd251fc.PNG)
 
-# 개발계획 일정
+## 개발계획 일정
 ![슬라이드5](https://user-images.githubusercontent.com/48820696/148493689-ed62736c-61b9-4c4a-b819-d89da196883e.PNG)
 ![슬라이드6](https://user-images.githubusercontent.com/48820696/148493691-16342ba2-3e54-47e9-b04e-0a1b15b87489.PNG)
 
-# 개발 디자인 
-## - 기본 디자인 설정
+## 개발 디자인 
+### - 기본 디자인 설정
 ![슬라이드7](https://user-images.githubusercontent.com/48820696/148493693-3c30b8c4-fc74-470d-8891-f572484b4750.PNG)
 ![슬라이드8](https://user-images.githubusercontent.com/48820696/148493696-955f5656-ee96-4ef9-8ab1-c49e12ea2f89.PNG)
 ![슬라이드9](https://user-images.githubusercontent.com/48820696/148493627-aeb0c9c3-da2a-4ff3-8ac1-1fdec7c3e41f.PNG)
 ![슬라이드10](https://user-images.githubusercontent.com/48820696/148493629-57a62c8f-d281-4f70-89c8-9ef9fab25750.PNG)
 ![슬라이드11](https://user-images.githubusercontent.com/48820696/148493631-ce9e99a9-5b53-40b9-9b6d-52a0b90cc50d.PNG)
 
-## - 각 페이지 자세히 살펴보기
+### - 각 페이지 자세히 살펴보기
 ![슬라이드12](https://user-images.githubusercontent.com/48820696/148493633-0126c047-152a-40f5-b2c2-6f37ddae43f1.PNG)
 ![슬라이드13](https://user-images.githubusercontent.com/48820696/148493634-908a9a73-f3ef-4b3f-a2f0-ba809baed4ce.PNG)
 ![슬라이드14](https://user-images.githubusercontent.com/48820696/148493636-3867e302-cef8-42bb-9762-01a23c121197.PNG)
@@ -47,5 +47,5 @@
 ![슬라이드35](https://user-images.githubusercontent.com/48820696/148493672-16a69f5e-65e2-472b-8036-6f8a671e68e0.PNG)
 ![슬라이드36](https://user-images.githubusercontent.com/48820696/148493675-3f7ee462-a65e-4e4a-a4dc-e9eddc5d2ef8.PNG)
 
-# 종료
+## 종료
 ![슬라이드37](https://user-images.githubusercontent.com/48820696/148493677-01f8af23-a068-44b4-8a28-63858693034b.PNG)
