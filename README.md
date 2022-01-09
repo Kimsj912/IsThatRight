@@ -40,7 +40,12 @@
 >  >```bash
 >  >$ pip freeze > requirements.txt
 >  >```
-
+> 
+>  ##### 5. 장고 실행하기
+>  ```bash
+>  $ cd isthatright
+>  $ python manage.py runserver
+>  ```
 
 ## 시작
 ![슬라이드1](https://user-images.githubusercontent.com/48820696/148493679-b0178cf1-b147-4540-b60e-2892021f192f.PNG)
