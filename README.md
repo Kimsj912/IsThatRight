@@ -41,9 +41,20 @@
 >  >$ pip freeze > requirements.txt
 >  >```
 > 
->  ##### 5. 장고 실행하기
+>  ##### 5. 프로젝트 파일로 이동하기
+>  - 이후에 다시 실행을 하려면 5~8번을 입력하면 된다.
+>  - 종료는 Ctrl + c
 >  ```bash
 >  $ cd isthatright
+>  ```
+>  
+>  ##### 6. migration하기
+>  ```bash
+>  $ python manage.py migrate
+>  ```
+>  
+>  ##### 7. 장고 실행하기
+>  ```bash
 >  $ python manage.py runserver
 >  ```
 
