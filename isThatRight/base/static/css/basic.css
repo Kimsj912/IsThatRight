@@ -1,3 +1,4 @@
+/* basic setting */
 *{
     margin: 0;
     padding: 0;
@@ -6,7 +7,42 @@
 body{
     background-color: rgb(225, 215, 185);
 }
-
+/* font setting */
+@font-face{
+    font-family: titleFont;
+    src: url("/static/font/jalnan.ttf");
+}
+@font-face {
+    font-family: questFont;
+    src: url('/static/font/Title_Bold.woff');
+}
+@font-face {
+    font-family: normalFont;
+    src: url('/static/font/Title_Medium.woff');
+}
+@font-face {
+    font-family: AnotationFont;
+    src: url('/static/font/Title_Light.woff');
+}
+/* common functional styles */
+.hidden{
+    display: none;
+}
+/* font stlye */
+.titleFont{
+    font-family: titleFont, Verdana, sans-serif;
+}
+.questFont{
+    font-family: questFont, Verdana, sans-serif;
+    font-size: large;
+}
+.normalFont{
+    font-family: normalFont, Verdana, sans-serif;
+}
+.anotFont{
+    font-family: AnotationFont, Verdana, sans-serif;
+}
+/* -------- basic part style -----------*/
 .outterContainer{
     border-inline: black solid 0.3rem;
     border : solid black 3rem dotted;
@@ -17,7 +53,10 @@ body{
     border-bottom: #fe442b solid 2rem;
     padding-right: 2rem;
 }
-
+.backToMainBtn{
+    background-color: inherit;
+    border: 0;
+}
 .contentBox{
     background-color: white;
     padding: 1rem 2rem 2rem 2rem;
