@@ -1,12 +1,13 @@
 {% extends "base.html" %}
 {% block content %}
 <div class="contentBox">
-    <div class="newGameBox text-end">
+    <div class="newGameBox text-end questFont">
         <button class="backToMainBtn">돌아가기 >></button>
+    </div>
+    <div class="titleBox">
+        <h1 class="titleFont">{% block pageTitle %}{% endblock %}</h1>
     </div>
     {% block makeGame %}
     {% endblock %}
 <!--이 곳에 페이지의 내용 작성-->
-<script src="/isThatRight/createGame/static/js/selectGame.js"></script>
-
 {% endblock %}
