@@ -1,0 +1,64 @@
+.questionBox{
+    margin-top: 1rem;
+}
+.questionBox img{
+    display: block;
+    margin: 0px auto;
+    border: 3px solid black;
+    width: 100%;
+    border-radius: 1rem;
+}
+.answerBox{
+    margin: 2rem 0 0 0;
+    text-align: center;
+}
+.answerInnerBox{
+    text-align: center;
+}
+.answerInput{
+    width: 20rem;
+    margin: 0;
+}
+.answerInnerBox ol{
+    list-style: decimal;
+    text-align: center;
+}
+.answerInnerBox li{
+    width: 100%;
+    border-bottom: 1px solid black;
+}
+.answerButton{
+    width: 100%;
+    margin: 2.5px 0;
+    text-align: start;
+    background-color: white;
+    /* padding-left: 1rem; */
+    border: 0;
+}
+.firstButton{
+    background-color: var(--point-color);
+    margin: 2rem 0 0 0;
+    width: 10rem;
+    border-radius: 1rem;
+}
+.prevButton{
+    background-color: lightgray;
+    margin: 2rem 0 0 0;
+    width: 5rem;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+}
+.nextButton{
+    background-color: var(--point-color);
+    margin: 2rem 0 0 0;
+    width: 5rem;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+.submitButton{
+    background-color: var(--accent-color);
+    margin: 2rem 0 0 0;
+    width: 5rem;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
