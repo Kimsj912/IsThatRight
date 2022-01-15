@@ -1,0 +1,144 @@
+/* common attribute  for responsive web*/
+:root{
+    --width : 100%;
+}
+@media (min-width: 768px) {
+    :root {
+        --width : 80%;
+    }
+}
+@media (min-width: 992px) {
+    :root {
+        --width : 70%;
+    }
+}
+@media (min-width: 1200px) {
+    :root {
+        --width : 60%;
+    }
+}
+
+/* common element*/
+.quest{
+    margin-top: 1rem;
+}
+.anotFont li{
+    list-style: none;
+}
+
+/* ---------- 각 요소별(common) ------------*/
+/* input[type='text']*/
+input[type='text']{
+    width: var(--width);
+    padding-left: 0.5rem;
+}
+input[type='text']:focus{
+    outline: none;
+}
+/* select*/
+select{
+    width: 5rem;
+}
+/* input[type='radio']*/
+input[type='radio'],
+input[type='radio']:checked {
+    appearance: none;
+    width: 1.2rem;
+    height: 1.2rem;
+    border-radius: 100%;
+    margin-right: 0.3rem;
+}
+input[type='radio'] {
+    background-color: white;
+    border: 0.22rem solid black;
+}
+input[type='radio']:checked {
+    background-color: var(--accent-color);
+}
+a:link{
+    color: black;
+    text-decoration: none;
+}
+
+/* -----------각 요소 별 (detail)  */
+.selectTypePart ul{
+    padding : 0rem 0.5rem 0.5rem 0rem;
+}
+.makeGamePart ul{
+    padding-left: 0;
+}
+.addQnaButton{ 
+    font-family: AnotationFont;
+    border: 2.5px solid black;
+    background-color: var(--point-color);
+    width: 100%;
+    text-align: center;
+    margin: 0.5rem 0 0.5rem 0;
+}
+.makeGamePart  td,table,th{
+    border: 2.5px solid black;
+}
+.makeGamePart table{
+    width: var(--width);
+}
+.makeGamePart th{
+    width: 2.5rem;
+    text-align: center;
+    vertical-align: middle;
+    background-color: var(--basicLight-color);
+    color: var(--basicDark-color);
+    border: 2.5px solid black;
+}
+.makeGamePart td{
+    height: 2rem;
+    vertical-align: middle;
+}
+.makeGamePart td:nth-child(even){
+    background-color: lightgray;
+}
+
+/* text Question and Answer */
+.makeGamePart input[type='text']{
+    background-color: inherit;
+    border: 0;
+}
+/* image Question */
+.makeGamePart input[type='file']{
+    display: none;
+} 
+.makeGamePart label[for^='imageFile']{
+    padding-left: 0.5rem;
+}
+/* select Answer */
+.selectAnswer div{
+    display: grid;
+    grid-template-columns: 1fr 10fr;
+}
+.selectAnswer span{
+    width: 1.5rem;
+    height: 1.5rem;
+    text-align: center;
+    vertical-align: middle;
+    background-color: var(--point-color);
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
+.selectAnswer input[type='text']{
+    width:95%;
+}
+.selectAnswer div{
+    margin : 3px 0;
+}
+.submitBox{
+    text-align: end;
+    margin-left: 1rem;
+}
+.submitBtn{
+    width: 5rem;
+    background-color: var(--accent-color);
+    font-family: AnotationFont;
+    border: 2.5px solid black;
+    text-align: center;
+    vertical-align: middle;
+    margin-top: 1rem;
+}

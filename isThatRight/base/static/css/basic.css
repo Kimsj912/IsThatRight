@@ -3,9 +3,16 @@
     margin: 0;
     padding: 0;
 }
-
 body{
-    background-color: rgb(225, 215, 185);
+    background-color: var(--background-color);
+    height: 100vh;
+}
+:root{
+    --background-color : rgb(225, 215, 185);
+    --basicDark-color : #000000;
+    --basicLight-color : #ffffff;
+    --accent-color : #fe442b;
+    --point-color : #ffdc78;
 }
 /* font setting */
 @font-face{
@@ -46,19 +53,23 @@ body{
 .outterContainer{
     border-inline: black solid 0.3rem;
     border : solid black 3rem dotted;
-    background-color: black;
+    background-color: var(--basicDark-color);
+    min-height: 100vh;
 }
 .header{
-    background-color: #ffdc78;
-    border-bottom: #fe442b solid 2rem;
+    background-color: var(--point-color);
+    border-bottom: var(--accent-color) solid 2rem;
     padding-right: 2rem;
 }
 .backToMainBtn{
     background-color: inherit;
     border: 0;
 }
+.titleBox{
+    margin-top: 1rem;
+}
 .contentBox{
-    background-color: white;
+    background-color: var(--basicLight-color);
     padding: 1rem 2rem 2rem 2rem;
 }
 .outterList{
