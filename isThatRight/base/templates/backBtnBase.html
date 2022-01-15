@@ -2,7 +2,7 @@
 {% block content %}
 <div class="contentBox">
     <div class="newGameBox text-end questFont">
-        <button class="backToMainBtn">돌아가기 >></button>
+        <a href="{% url 'home' %}"><button class="backToMainBtn">돌아가기 >></button></a>
     </div>
     <div class="titleBox">
         <h1 class="titleFont">{% block pageTitle %}{% endblock %}</h1>
