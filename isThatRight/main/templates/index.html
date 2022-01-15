@@ -1,31 +1,28 @@
 {% extends "base.html" %}
 {% block content %}
-<div class="contentBox">
+<div class="contentBox questFont">
     <div class="newGameBox text-end">
         <a href="{% url 'selectGameType' %}">
             <button class="newGameBtn">새로운 게임 만들기 >></button>
         </a>
     </div>
     <div class="outterList">
-        <h2 class="titleInnerBox">이미지보고 단어 맞추는 게임</h2>
-        <ul class="list-group listInnerBox">
-            <li class="list-group-item">Cras justo odio</li>
-            <li class="list-group-item">Dapibus ac facilisis in</li>
-            <li class="list-group-item">Morbi leo risus</li>
-            <li class="list-group-item">Porta ac consectetur ac</li>
-            <li class="list-group-item">Vestibulum at eros</li>
+        <h2 class="titleInnerBox">이미지보고 단어 맞추기</h2>
+        <ul class="list-group listInnerBox normalFont">
+            <li class="list-group-item"><a href="{% url 'showGame' %}">마블 캐릭터 이름</a></li>
+            <li class="list-group-item">대한민국 배우 이름</li>
+            <li class="list-group-item">K-pop 아이돌</li>
+            <li class="list-group-item">국가 이름</li>
         </ul>
     </div>
     <div class="outterList">
-        <h2 class="titleInnerBox">이미지보고 단어 맞추는 게임</h2>
-        <ul class="list-group listInnerBox">
-            <li class="list-group-item">Cras justo odio</li>
-            <li class="list-group-item">Dapibus ac facilisis in</li>
-            <li class="list-group-item">Morbi leo risus</li>
-            <li class="list-group-item">Porta ac consectetur ac</li>
-            <li class`="list-group-item">Vestibulum at eros</li>
+        <h2 class="titleInnerBox">초성 게임</h2>
+        <ul class="list-group listInnerBox normalFont">
+            <li class="list-group-item">우리나라 속담</li>
+            <li class="list-group-item">게임 이름</li>
+            <li class="list-group-item">게임 캐릭터</li>
+            <li class="list-group-item">우리나라 지역</li>
         </ul>
     </div>
 </div>
 {% endblock %}
- 

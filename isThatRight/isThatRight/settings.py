@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'base',
     'main',
     'createGame',
+    'showGame',
 ]
 
 MIDDLEWARE = [
