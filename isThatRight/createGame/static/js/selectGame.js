@@ -22,8 +22,11 @@ imageFileInputs.forEach(uploader => uploader.addEventListener('change',function(
     selectedLabel.innerHTML = e.target.files[0].name;
 }));
 addQnaBtn.addEventListener("click",function(e){
-    qnaCount++;
-    addQna();
+    if(qnaCount==20) alert("더이상 항목을 추가할 수 없습니다.");
+    else{
+        qnaCount++;
+        addQna();
+    }   
 });
 document.querySelectorAll('.selectTypeRadio').forEach((elem) => {
     elem.addEventListener("change", function(event) {
@@ -48,8 +51,7 @@ document.querySelectorAll('.selectTypeRadio').forEach((elem) => {
     });
 });
 
-
-
+// functions ---------------------------------
 function addQna(){
     let retVal = "";
     retVal+=`<div class="qnaSet"><tr><th rowspan="2">${qnaCount}</th>`;
