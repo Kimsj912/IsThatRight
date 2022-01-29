@@ -95,6 +95,12 @@
 .selectAnswer div{
     margin : 3px 0;
 }
+span#answer{
+    background-color: var(--accent-color);
+    width: 3rem;
+    border-top-right-radius: 40%;
+    border-bottom-right-radius: 40%;
+}
 .submitBox{
     text-align: end;
     margin-left: 1rem;
