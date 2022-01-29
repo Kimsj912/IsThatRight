@@ -51,7 +51,7 @@ def createGame(request):
                 qnaSet.answerList4 = request.POST['answerList'+str(qna)+'num4']
             qnaSet.save()
 
-        
-        return render(request, 'index.html')
+        gameset = Game.objects.all()
+        return render(request, 'index.html', {'gameset':gameset})
     else :
         return render(request,'selectGameType.html/')

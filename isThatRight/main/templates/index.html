@@ -7,21 +7,12 @@
         </a>
     </div>
     <div class="outterList">
-        <h2 class="titleInnerBox">이미지보고 단어 맞추기</h2>
+        <h2 class="titleInnerBox">새로나온 게임 리스트</h2>
         <ul class="list-group listInnerBox normalFont">
             <li class="list-group-item"><a href="{% url 'showGame' %}">마블 캐릭터 이름</a></li>
-            <li class="list-group-item">대한민국 배우 이름</li>
-            <li class="list-group-item">K-pop 아이돌</li>
-            <li class="list-group-item">국가 이름</li>
-        </ul>
-    </div>
-    <div class="outterList">
-        <h2 class="titleInnerBox">초성 게임</h2>
-        <ul class="list-group listInnerBox normalFont">
-            <li class="list-group-item">우리나라 속담</li>
-            <li class="list-group-item">게임 이름</li>
-            <li class="list-group-item">게임 캐릭터</li>
-            <li class="list-group-item">우리나라 지역</li>
+            {% for game in gameset %}
+            <li class="list-group-item">{{game.title}}</li>
+            {% endfor %}
         </ul>
     </div>
 </div>
