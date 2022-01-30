@@ -1,15 +1,23 @@
 from traceback import print_tb
-from django.shortcuts import render
+from django.shortcuts import get_object_or_404, render
 from .models import Game, QnaSet
 # Create your views here.
 # Main ---------------------------------------------------------------
 def home_view(request):
     gameSet = Game.objects.all()
-    return render(request, 'index.html')
+    return render(request, 'index.html',{'gameset':gameSet})
 
 # Show Game ------------------------------------------------------
-def showGame(request):
-    return render(request,'gamePage.html/')
+def showGame(request, game_id):
+    selected_gameInfo = get_object_or_404(Game, pk=game_id)
+    related_qnaSet = QnaSet.objects.filter(game_id=game_id)
+    # qnaSet = []
+    # for qna in related_qnaSet :
+    #     miniset = {qna.game_id, {}}
+    #     for i in range(1,5):
+    #         qnaSet[2].insert(qna)
+
+    return render(request,'gamePage.html', {'gameInfo':selected_gameInfo, 'qnaSet':related_qnaSet})
 
 # Create Game ------------------------------------------------------
 # def selectGameType(request):
@@ -20,18 +28,10 @@ def createGame(request):
         new_game = Game()
         new_game.title = request.POST['title']
 
-        if(request.POST['selectQType']=='Qtext') :
-            new_game.questionType = Game.QT
-        else :
-            new_game.questionType = Game.QI
-        
-        if(request.POST['selectAType']=='Atext') :
-            new_game.answerType = Game.AT
-        else :
-            new_game.answerType = Game.AS
+        new_game.questionType = Game.QT if request.POST['selectQType']=='Qtext' else Game.QI
+        new_game.answerType = Game.AT if request.POST['selectAType']=='Atext' else Game.AS
         new_game.save()
 
-        print('게임아이디 : '+str(new_game.id))
         # QNA SET
         qnaCount = int(request.POST['qnaCount'])
         for qna in range(1,qnaCount+1):
@@ -51,7 +51,7 @@ def createGame(request):
                 qnaSet.answerList4 = request.POST['answerList'+str(qna)+'num4']
             qnaSet.save()
 
-        gameset = Game.objects.all()
-        return render(request, 'index.html', {'gameset':gameset})
+        gameSet = Game.objects.all()
+        return render(request, 'index.html', {'gameset':gameSet})
     else :
         return render(request,'selectGameType.html/')

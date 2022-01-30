@@ -9,9 +9,8 @@
     <div class="outterList">
         <h2 class="titleInnerBox">새로나온 게임 리스트</h2>
         <ul class="list-group listInnerBox normalFont">
-            <li class="list-group-item"><a href="{% url 'showGame' %}">마블 캐릭터 이름</a></li>
             {% for game in gameset %}
-            <li class="list-group-item">{{game.title}}</li>
+            <li class="list-group-item"><a href="{% url 'showGame' game.id%}">{{game.title}}</a></li>
             {% endfor %}
         </ul>
     </div>

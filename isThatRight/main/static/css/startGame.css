@@ -1,6 +1,10 @@
 .questionBox{
     margin-top: 1rem;
 }
+.qMark{
+    font-size: large;
+    font-weight: bold;
+}
 .questionBox img{
     display: block;
     margin: 0px auto;
@@ -35,30 +39,36 @@
     /* padding-left: 1rem; */
     border: 0;
 }
-.firstButton{
-    background-color: var(--point-color);
+.checkedBtn {
+    color: var(--accent-color);
+}
+.buttonHztBox{
+    text-align: center;
+}
+.myBtn{
     margin: 2rem 0 0 0;
-    width: 10rem;
-    border-radius: 1rem;
 }
 .prevButton{
     background-color: lightgray;
-    margin: 2rem 0 0 0;
-    width: 5rem;
-    border-top-left-radius: 1rem;
-    border-bottom-left-radius: 1rem;
 }
 .nextButton{
     background-color: var(--point-color);
-    margin: 2rem 0 0 0;
-    width: 5rem;
-    border-top-right-radius: 1rem;
-    border-bottom-right-radius: 1rem;
 }
 .submitButton{
     background-color: var(--accent-color);
-    margin: 2rem 0 0 0;
+}
+.oneBtn{
+    width: 10rem;
+    border-radius: 1rem;
+}
+.twoBtn{
     width: 5rem;
+}
+.twoBtn:nth-child(2n-1){
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+}
+.twoBtn:nth-child(2n){
     border-top-right-radius: 1rem;
     border-bottom-right-radius: 1rem;
 }
